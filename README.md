@@ -6,7 +6,7 @@ This library provides a simple `ExternalLink` component for [react](https://es.r
 
 ## Installation
 
-Using npm: `npm istall react-external-link --save`
+Using npm: `npm install react-external-link --save`
 
 Using yarn: `yarn add react-external-link`
 
