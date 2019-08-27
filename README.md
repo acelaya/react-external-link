@@ -12,7 +12,7 @@ Using yarn: `yarn add react-external-link`
 
 Simple link with no text:
 
-```typescript jsx
+```tsx
 import React from 'react';
 import { ExternalLink } from 'react-external-link';
 
@@ -29,7 +29,7 @@ This will be rendered as `<a href="https://example.com" target="_blank" rel="noo
 
 If you need to provide a custom content, you can do so by providing the `ExternalLink`'s `children`:
 
-```typescript jsx
+```tsx
 import React from 'react';
 import { ExternalLink } from 'react-external-link';
 
