@@ -1,5 +1,7 @@
 # React External Link
 
+[![Paypal Donate](https://img.shields.io/badge/Donate-paypal-blue.svg?style=flat-square&logo=paypal&colorA=cccccc)](https://acel.me/donate)
+
 This library provides a simple `ExternalLink` component for [react](https://es.reactjs.org/) which can be used to render `a` tags with both `target="_blank"` and `rel="noopener noreferrer"` attributes.
 
 ## Installation
