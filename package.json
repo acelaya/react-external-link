@@ -12,6 +12,7 @@
     "email": "alejandro@alejandrocelaya.com",
     "url": "https://www.alejandrocelaya.com"
   },
+  "keywords": ["react", "link", "external", "target", "noopener", "noreferrer"],
   "license": "MIT",
   "types": "dist/index.d.ts",
   "devDependencies": {
