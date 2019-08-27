@@ -10,7 +10,7 @@ Using yarn: `yarn add react-external-link`
 
 ## Usage
 
-Simple link with no text:
+If you just need a simple link with no custom text:
 
 ```tsx
 import React from 'react';
@@ -35,11 +35,19 @@ import { ExternalLink } from 'react-external-link';
 
 const MyComponent = () => (
   <div>
-    <ExternalLink href="https://example.com">Visit the site<ExternalLink>
+    <ExternalLink href="https://example.com">
+      <span>Visit the site</span>
+    <ExternalLink>
   </div>
 );
 
 export default MyComponent;
 ```
 
-This will be rendered as `<a href="https://example.com" target="_blank" rel="noopener noreferrer">Visit the site</a>`.
+This will be rendered as:
+
+```html
+<a href="https://example.com" target="_blank" rel="noopener noreferrer">
+  <span>Visit the site</span>
+</a>
+```
