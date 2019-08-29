@@ -3,6 +3,7 @@ import React, { FunctionComponent, ReactNode } from 'react';
 export interface ExternalLinkProps {
   href: string;
   children?: ReactNode;
+  [rest: string]: any;
 }
 
 const ExternalLink: FunctionComponent<ExternalLinkProps> = ({ href, children, ...rest }: ExternalLinkProps) => (
