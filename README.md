@@ -53,3 +53,16 @@ This will be rendered as:
   <span>Visit the site</span>
 </a>
 ```
+
+It is also possible to pass any extra props, and they will be propagated to the link:
+
+```tsx
+import React from 'react';
+import { ExternalLink } from 'react-external-link';
+
+const MyComponent = () => <ExternalLink href="https://example.com" className="my-class" />;
+
+export default MyComponent;
+```
+
+The result in this case will be `<a href="https://example.com" target="_blank" rel="noopener noreferrer" class="my-class">https://example.com</a>`.
