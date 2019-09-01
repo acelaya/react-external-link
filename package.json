@@ -1,8 +1,10 @@
 {
   "name": "react-external-link",
   "version": "1.0.1",
+  "license": "MIT",
   "main": "dist/index.cjs.js",
   "module": "dist/index.esm.js",
+  "types": "dist/index.d.ts",
   "repository": {
     "url": "https://github.com/acelaya/react-external-link",
     "type": "git"
@@ -20,8 +22,14 @@
     "noopener",
     "noreferrer"
   ],
-  "license": "MIT",
-  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "rollup -c",
+    "build:watch": "rollup -c -w",
+    "dev": "npm run build:watch",
+    "test": "ts-node test/test.ts",
+    "lint": "eslint ./src/**/*.ts ./src/**/*.tsx",
+    "lint:fix": "npm run lint -- --fix"
+  },
   "devDependencies": {
     "@types/react": "^16.8",
     "@types/react-dom": "^16.8",
@@ -52,15 +60,6 @@
   "peerDependencies": {
     "react": "^16.8",
     "react-dom": "^16.8"
-  },
-  "scripts": {
-    "build": "rollup -c",
-    "build:watch": "rollup -c -w",
-    "dev": "npm run build:watch",
-    "test": "ts-node test/test.ts",
-    "pretest": "npm run build",
-    "lint": "eslint ./src/**/*.ts ./src/**/*.tsx",
-    "lint:fix": "npm run lint -- --fix"
   },
   "files": [
     "dist"
