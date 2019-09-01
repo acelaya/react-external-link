@@ -1,0 +1,8 @@
+version: '3'
+
+services:
+    react_external_link:
+        container_name: react_external_link
+        image: node:12.9.1-alpine
+        volumes:
+            - ./:/react-external-link
