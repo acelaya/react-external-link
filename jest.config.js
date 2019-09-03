@@ -1,8 +1,14 @@
 module.exports = {
-  roots: [ '<rootDir>/src' ],
   transform: {
     '^.+\\.tsx?$': 'ts-jest',
   },
-  testRegex: '/test/.*(test|spec))\\.tsx?$',
   moduleFileExtensions: [ 'ts', 'tsx', 'js', 'jsx' ],
+  coverageDirectory: '<rootDir>/coverage',
+  collectCoverageFrom: [
+    'src/**/*.tsx',
+    '!src/index.ts',
+  ],
+  testMatch: [ '<rootDir>/test/**/*.(test|spec).{js,jsx,ts,tsx}' ],
+  testEnvironment: 'jsdom',
+  testURL: 'http://localhost',
 };
