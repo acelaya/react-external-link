@@ -1,6 +1,8 @@
 # React External Link
 
 [![Build Status](https://img.shields.io/travis/acelaya/react-external-link.svg?style=flat-square)](https://travis-ci.org/acelaya/react-external-link)
+[![Code Coverage](https://img.shields.io/scrutinizer/coverage/g/acelaya/react-external-link.svg?style=flat-square)](https://scrutinizer-ci.com/g/acelaya/react-external-link/?branch=master)
+[![Scrutinizer Code Quality](https://img.shields.io/scrutinizer/g/acelaya/react-external-link.svg?style=flat-square)](https://scrutinizer-ci.com/g/acelaya/react-external-link/?branch=master)
 [![npm](https://img.shields.io/npm/v/react-external-link?style=flat-square)](https://www.npmjs.com/package/react-external-link)
 [![npm downloads](https://img.shields.io/npm/dt/react-external-link?style=flat-square)](https://www.npmjs.com/package/react-external-link)
 [![GitHub license](https://img.shields.io/github/license/acelaya/react-external-link.svg?style=flat-square)](https://github.com/acelaya/react-external-link/blob/master/LICENSE)
