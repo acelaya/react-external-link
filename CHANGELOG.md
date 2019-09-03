@@ -4,13 +4,14 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/), and this project adheres to [Semantic Versioning](https://semver.org).
 
-## [Unreleased]
+## 1.1.0 - 2019-09-03
 
 #### Added
 
 * [#2](https://github.com/acelaya/react-external-link/issues/2) Added travis config and enabled project builds.
 * [#1](https://github.com/acelaya/react-external-link/issues/1) Added tests which are run as part of the build.
 * [#5](https://github.com/acelaya/react-external-link/issues/5) Project added to scrutinizer.
+* [#3](https://github.com/acelaya/react-external-link/issues/3) Automated package releases.
 
 #### Changed
 
