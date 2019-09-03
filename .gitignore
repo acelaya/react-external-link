@@ -4,3 +4,4 @@ dist
 docker-compose.override.yml
 home
 .idea
+coverage
