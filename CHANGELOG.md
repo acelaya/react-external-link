@@ -10,6 +10,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 
 * [#2](https://github.com/acelaya/react-external-link/issues/2) Added travis config and enabled project builds.
 * [#1](https://github.com/acelaya/react-external-link/issues/1) Added tests which are run as part of the build.
+* [#5](https://github.com/acelaya/react-external-link/issues/5) Project added to scrutinizer.
 
 #### Changed
 
