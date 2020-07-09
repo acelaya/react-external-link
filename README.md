@@ -45,7 +45,7 @@ const MyComponent = () => (
   <div>
     <ExternalLink href="https://example.com">
       <span>Visit the site</span>
-    <ExternalLink>
+    </ExternalLink>
   </div>
 );
 
