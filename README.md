@@ -1,8 +1,7 @@
 # React External Link
 
-[![Build Status](https://img.shields.io/travis/acelaya/react-external-link.svg?style=flat-square)](https://travis-ci.org/acelaya/react-external-link)
-[![Code Coverage](https://img.shields.io/scrutinizer/coverage/g/acelaya/react-external-link.svg?style=flat-square)](https://scrutinizer-ci.com/g/acelaya/react-external-link/?branch=master)
-[![Scrutinizer Code Quality](https://img.shields.io/scrutinizer/g/acelaya/react-external-link.svg?style=flat-square)](https://scrutinizer-ci.com/g/acelaya/react-external-link/?branch=master)
+[![Build Status](https://img.shields.io/github/workflow/status/acelaya/react-external-link/Continuous%20integration/main?logo=github&style=flat-square)](https://github.com/acelaya/react-external-link/actions?query=workflow%3A%22Continuous+integration%22)
+[![Code Coverage](https://img.shields.io/codecov/c/gh/acelaya/react-external-link/main?style=flat-square)](https://app.codecov.io/gh/acelaya/react-external-link)
 [![npm](https://img.shields.io/npm/v/react-external-link?style=flat-square)](https://www.npmjs.com/package/react-external-link)
 [![npm downloads](https://img.shields.io/npm/dt/react-external-link?style=flat-square)](https://www.npmjs.com/package/react-external-link)
 [![GitHub license](https://img.shields.io/github/license/acelaya/react-external-link.svg?style=flat-square)](https://github.com/acelaya/react-external-link/blob/master/LICENSE)

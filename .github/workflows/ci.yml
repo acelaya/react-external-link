@@ -1,0 +1,58 @@
+name: Continuous integration
+
+on:
+  pull_request: null
+  push:
+    branches:
+      - main
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    continue-on-error: true
+    strategy:
+      matrix:
+        node-version: [ '12.x', '13.x', '14.x', '15.x' ]
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+      - name: Use node.js
+        uses: actions/setup-node@v1
+        with:
+          node-version: ${{ matrix.node-version }}
+      - run: npm ci
+      - run: npm run lint
+
+  unit-tests:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-version: ['12.x', '13.x', '14.x', '15.x']
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+      - name: Use node.js
+        uses: actions/setup-node@v1
+        with:
+          node-version: ${{ matrix.node-version }}
+      - run: npm ci
+      - run: npm run test:ci
+      - name: Publish coverage
+        uses: codecov/codecov-action@v1
+        with:
+          file: ./coverage/clover.xml
+
+  build-dist:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-version: ['14.x']
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+      - name: Use node.js
+        uses: actions/setup-node@v1
+        with:
+          node-version: ${{ matrix.node-version }}
+      - run: npm ci
+      - run: npm run build
