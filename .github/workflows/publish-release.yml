@@ -6,18 +6,6 @@ on:
       - 'v*'
 
 jobs:
-  github-release:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout code
-        uses: actions/checkout@v2
-      - name: Publish release
-        uses: docker://antonyurchenko/git-release:latest
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          ALLOW_TAG_PREFIX: "true"
-          ALLOW_EMPTY_CHANGELOG: "true"
-
   npm-package:
     runs-on: ubuntu-latest
     strategy:
@@ -35,3 +23,16 @@ jobs:
       - run: npm publish --access public
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+
+  github-release:
+    needs: ['npm-package']
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+      - name: Publish release
+        uses: docker://antonyurchenko/git-release:latest
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          ALLOW_TAG_PREFIX: "true"
+          ALLOW_EMPTY_CHANGELOG: "true"
