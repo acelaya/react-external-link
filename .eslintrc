@@ -31,7 +31,7 @@
     "react/jsx-filename-extension": ["error", { "extensions": [".js", ".jsx", ".ts", ".tsx"] }],
     "react/prop-types": "off",
     "@typescript-eslint/explicit-function-return-type": "off",
-    "@typescript-eslint/array-type": ["error", "array"]
+    "@typescript-eslint/array-type": ["error"]
   },
   "settings": {
     "react": {
