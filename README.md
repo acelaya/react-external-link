@@ -11,9 +11,7 @@ This library provides a simple `ExternalLink` component for [react](https://es.r
 
 ## Installation
 
-Using npm: `npm install react-external-link --save`
-
-Using yarn: `yarn add react-external-link`
+    npm install react-external-link --save
 
 ## Usage
 
@@ -32,7 +30,11 @@ const MyComponent = () => (
 export default MyComponent;
 ```
 
-This will be rendered as `<a href="https://example.com" target="_blank" rel="noopener noreferrer">https://example.com</a>`.
+This will be rendered as:
+
+```html
+<a href="https://example.com" target="_blank" rel="noopener noreferrer">https://example.com</a>
+```
 
 If you need to provide a custom content, you can do so by providing the `ExternalLink`'s `children`:
 
@@ -70,4 +72,8 @@ const MyComponent = () => <ExternalLink href="https://example.com" className="my
 export default MyComponent;
 ```
 
-The result in this case will be `<a href="https://example.com" target="_blank" rel="noopener noreferrer" class="my-class">https://example.com</a>`.
+The result in this case will be:
+
+```html
+<a href="https://example.com" target="_blank" rel="noopener noreferrer" class="my-class">https://example.com</a>
+```
