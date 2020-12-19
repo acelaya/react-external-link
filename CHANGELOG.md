@@ -4,6 +4,26 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/), and this project adheres to [Semantic Versioning](https://semver.org).
 
+## [1.2.0] - 2020-12-19
+### Added
+* *Nothing*
+
+### Changed
+* [#16](https://github.com/acelaya/react-external-link/issues/16) Migrated build to Github Actions.
+* [#17](https://github.com/acelaya/react-external-link/issues/17) Migrated release publishing to Github Actions.
+* [#18](https://github.com/acelaya/react-external-link/issues/18) Migrated to Codecov as coverage backend.
+* [#19](https://github.com/acelaya/react-external-link/issues/19) Updated dependencies.
+
+### Deprecated
+* *Nothing*
+
+### Removed
+* *Nothing*
+
+### Fixed
+* *Nothing*
+
+
 ## [1.1.0] - 2019-09-03
 ### Added
 * [#2](https://github.com/acelaya/react-external-link/issues/2) Added travis config and enabled project builds.
