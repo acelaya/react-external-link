@@ -8,6 +8,7 @@
     "adidas-typescript"
   ],
   "parserOptions": {
+    "createDefaultProgram": true,
     "tsconfigRootDir": ".",
     "ecmaVersion": 2018,
     "sourceType": "module",
@@ -16,7 +17,8 @@
     }
   },
   "rules": {
-    "comma-dangle": ["error", "always-multiline"],
+    "comma-dangle": ["warn", "always-multiline"],
+    "@typescript-eslint/no-unsafe-assignment": "warn",
     "no-invalid-this": "off",
     "no-inline-comments": "off",
     "no-console": "warn",

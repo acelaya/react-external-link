@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-unsafe-assignment */
 import typescript from 'rollup-plugin-typescript2';
 import { main, module, peerDependencies } from './package.json';
 
@@ -7,12 +8,12 @@ export default [
     external: Object.keys(peerDependencies || {}),
     plugins: [
       typescript({
-        typescript: require('typescript'),
-      }),
+        typescript: require('typescript')
+      })
     ],
     output: [
       { file: main, format: 'cjs' },
-      { file: module, format: 'esm' },
-    ],
-  },
+      { file: module, format: 'esm' }
+    ]
+  }
 ];

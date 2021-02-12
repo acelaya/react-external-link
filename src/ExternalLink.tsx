@@ -1,15 +1,15 @@
-import React, { FunctionComponent, ReactNode } from 'react';
+import React from 'React';
 
 export interface ExternalLinkProps {
   href: string;
-  children?: ReactNode;
+  children?: React.ReactNode;
   [rest: string]: any;
 }
 
-const ExternalLink: FunctionComponent<ExternalLinkProps> = ({ href, children, ...rest }: ExternalLinkProps) => (
+const externalLink: React.FunctionComponent<ExternalLinkProps> = ({ href, children, ...rest }: ExternalLinkProps) => (
   <a target="_blank" rel="noopener noreferrer" href={href} {...rest}>
-    {children || href}
+    { children ?? href }
   </a>
 );
 
-export default ExternalLink;
+export default externalLink;
