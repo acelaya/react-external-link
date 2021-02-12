@@ -1,4 +1,4 @@
-import React, { ReactNode } from 'React';
+import React, { ReactNode } from 'react';
 import { render, cleanup } from '@testing-library/react';
 import '@testing-library/jest-dom/extend-expect';
 import ExternalLink from '../src/ExternalLink';
