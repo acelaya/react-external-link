@@ -19,6 +19,7 @@ jobs:
           node-version: ${{ matrix.node-version }}
           registry-url: 'https://registry.npmjs.org'
       - run: npm ci
+      - run: npm version ${GITHUB_REF#refs/tags/v} --git-tag-version=false
       - run: npm run build
       - run: npm publish --access public
         env:
