@@ -4,7 +4,7 @@ import '@testing-library/jest-dom/extend-expect';
 import ExternalLink from '../src/ExternalLink';
 
 describe('<ExternalLink />', () => {
-  const createExternalLink = (href: string = 'href', children?: ReactNode): ChildNode => {
+  const createExternalLink = (href = 'href', children?: ReactNode): ChildNode => {
     const { container } = render(<ExternalLink href={href} children={children} />);
     const { firstChild } = container;
 

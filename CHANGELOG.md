@@ -4,6 +4,23 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/), and this project adheres to [Semantic Versioning](https://semver.org).
 
+## [Unreleased]
+### Added
+* *Nothing*
+
+### Changed
+* *Nothing*
+
+### Deprecated
+* *Nothing*
+
+### Removed
+* *Nothing*
+
+### Fixed
+* [#21](https://github.com/acelaya/react-external-link/issues/21) Fixed linting by updating to `@shlinkio/eslint-config-js-coding-standard` as the coding style.
+
+
 ## [1.2.0] - 2020-12-19
 ### Added
 * *Nothing*
