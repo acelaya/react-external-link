@@ -9,7 +9,6 @@ on:
 jobs:
   lint:
     runs-on: ubuntu-latest
-    continue-on-error: true
     strategy:
       matrix:
         node-version: [ '12.x', '13.x', '14.x', '15.x' ]
