@@ -1,4 +1,4 @@
-import typescript from 'rollup-plugin-typescript2';
+import typescript from '@rollup/plugin-typescript';
 import { main, module, peerDependencies } from './package.json';
 
 export default [
@@ -8,6 +8,7 @@ export default [
     plugins: [
       typescript({
         typescript: require('typescript'),
+        tsconfig: `${__dirname}/tsconfig.json`
       }),
     ],
     output: [

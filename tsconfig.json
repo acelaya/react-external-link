@@ -1,7 +1,8 @@
 {
   "compilerOptions": {
     "declaration": true,
-    "declarationDir": "./dist",
+    "declarationDir": "./",
+    "outDir": "./dist",
     "strict": true,
     "allowSyntheticDefaultImports": true,
     "sourceMap": true,
@@ -9,12 +10,12 @@
     "strictNullChecks": true,
     "moduleResolution": "node",
     "noImplicitAny": true,
-    "outDir": "./dist",
     "target": "es5",
     "jsx": "react",
     "lib": ["dom", "esnext"],
     "esModuleInterop": true,
-    "module": "esnext"
+    "module": "esnext",
+
   },
   "include": ["src/**/*", "test/**/*"],
   "exclude": ["node_modules"]
