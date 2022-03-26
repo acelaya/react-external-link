@@ -3,19 +3,6 @@
     "@shlinkio/js-coding-standard"
   ],
   "parserOptions": {
-    "tsconfigRootDir": ".",
-    "ecmaVersion": 2019,
-    "sourceType": "module",
-    "ecmaFeatures": {
-      "jsx": true
-    }
-  },
-  "rules": {
-    "@typescript-eslint/naming-convention": "off"
-  },
-  "settings": {
-    "react": {
-      "version": "detect"
-    }
+    "project": "./tsconfig.json"
   }
 }
