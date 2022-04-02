@@ -35,7 +35,7 @@
     "@rollup/plugin-typescript": "^8.3.1",
     "@shlinkio/eslint-config-js-coding-standard": "~2.0.1",
     "@testing-library/jest-dom": "^5.16.3",
-    "@testing-library/react": "^12.1.4",
+    "@testing-library/react": "^13.0.0",
     "@types/jest": "^27.4.1",
     "@types/react": "^17.0.43",
     "@types/react-dom": "^17.0.14",
@@ -44,16 +44,16 @@
     "eslint-loader": "^4.0.2",
     "jest": "^27.5.1",
     "prepend-file": "^2.0.1",
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0",
     "rollup": "^2.70.1",
     "ts-jest": "^27.1.4",
     "tslib": "^2.3.1",
     "typescript": "^4.6.3"
   },
   "peerDependencies": {
-    "react": "^17.0",
-    "react-dom": "^17.0"
+    "react": "^17.0 || ^18.0",
+    "react-dom": "^17.0 || ^18.0"
   },
   "files": [
     "dist"
