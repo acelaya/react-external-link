@@ -1,15 +1,12 @@
-import React, { FunctionComponent, ReactNode } from 'react';
+import React, { AnchorHTMLAttributes, FC, ReactNode } from 'react';
 
-export interface ExternalLinkProps {
+export interface ExternalLinkProps extends AnchorHTMLAttributes<Element> {
   href: string;
   children?: ReactNode;
-  [rest: string]: any;
 }
 
-const ExternalLink: FunctionComponent<ExternalLinkProps> = ({ href, children, ...rest }: ExternalLinkProps) => (
+export const ExternalLink: FC<ExternalLinkProps> = ({ href, children, ...rest }: ExternalLinkProps) => (
   <a target="_blank" rel="noopener noreferrer" href={href} {...rest}>
     {children ?? href}
   </a>
 );
-
-export default ExternalLink;

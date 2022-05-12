@@ -1,10 +1,10 @@
 import React, { ReactNode } from 'react';
-import { render, cleanup } from '@testing-library/react';
+import { render } from '@testing-library/react';
 import '@testing-library/jest-dom/extend-expect';
-import ExternalLink from '../src/ExternalLink';
+import { ExternalLink } from '../src';
 
 describe('<ExternalLink />', () => {
-  const createExternalLink = (href = 'href', children?: ReactNode): ChildNode => {
+  const setUp = (href = 'href', children?: ReactNode): ChildNode => {
     const { container } = render(<ExternalLink href={href} children={children} />);
     const { firstChild } = container;
 
@@ -15,10 +15,8 @@ describe('<ExternalLink />', () => {
     return firstChild;
   };
 
-  afterEach(cleanup);
-
   it('properly renders "target" and "rel" attributes', () => {
-    const externalLink = createExternalLink();
+    const externalLink = setUp();
 
     expect(externalLink).toHaveAttribute('target', '_blank');
     expect(externalLink).toHaveAttribute('rel', 'noopener noreferrer');
@@ -26,18 +24,18 @@ describe('<ExternalLink />', () => {
 
   it('makes use of href attribute as children when no other children is provided', () => {
     const href = 'https://google.com';
-    const externalLink = createExternalLink(href);
+    const externalLink = setUp(href);
 
     expect(externalLink).toHaveAttribute('href', href);
-    expect(externalLink.textContent).toEqual(href);
+    expect(externalLink).toHaveTextContent(href);
   });
 
   it('renders specific children when provided', () => {
     const href = 'https://google.com';
     const children = 'Go to Google';
-    const externalLink = createExternalLink(href, children);
+    const externalLink = setUp(href, children);
 
     expect(externalLink).toHaveAttribute('href', href);
-    expect(externalLink.textContent).toEqual(children);
+    expect(externalLink).toHaveTextContent(children);
   });
 });
