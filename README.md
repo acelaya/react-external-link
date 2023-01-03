@@ -1,6 +1,6 @@
 # React External Link
 
-[![Build Status](https://img.shields.io/github/workflow/status/acelaya/react-external-link/Continuous%20integration/main?logo=github&style=flat-square)](https://github.com/acelaya/react-external-link/actions?query=workflow%3A%22Continuous+integration%22)
+[![Build Status](https://img.shields.io/github/actions/workflow/status/acelaya/react-external-link/ci.yml?branch=main&logo=github&style=flat-square)](https://github.com/acelaya/react-external-link/actions/workflows/ci.yml)
 [![Code Coverage](https://img.shields.io/codecov/c/gh/acelaya/react-external-link/main?style=flat-square)](https://app.codecov.io/gh/acelaya/react-external-link)
 [![npm](https://img.shields.io/npm/v/react-external-link?style=flat-square)](https://www.npmjs.com/package/react-external-link)
 [![npm downloads](https://img.shields.io/npm/dt/react-external-link?style=flat-square)](https://www.npmjs.com/package/react-external-link)

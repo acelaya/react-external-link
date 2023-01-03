@@ -4,8 +4,8 @@ import '@testing-library/jest-dom/extend-expect';
 import { ExternalLink } from '../src';
 
 describe('<ExternalLink />', () => {
-  const setUp = (href = 'href', children?: ReactNode): ChildNode => {
-    const { container } = render(<ExternalLink href={href} children={children} />);
+  const setUp = (href = 'href', children?: ReactNode, rel?: string): ChildNode => {
+    const { container } = render(<ExternalLink href={href} children={children} rel={rel} />);
     const { firstChild } = container;
 
     if (!firstChild) {
@@ -37,5 +37,12 @@ describe('<ExternalLink />', () => {
 
     expect(externalLink).toHaveAttribute('href', href);
     expect(externalLink).toHaveTextContent(children);
+  });
+
+  it('appends provided rel to protected one', () => {
+    const externalLink = setUp('href', undefined, 'me');
+
+    expect(externalLink).toHaveAttribute('target', '_blank');
+    expect(externalLink).toHaveAttribute('rel', 'noopener noreferrer me');
   });
 });
