@@ -39,10 +39,10 @@ describe('<ExternalLink />', () => {
     expect(externalLink).toHaveTextContent(children);
   });
 
-  it('prepends provided rel to protected one', () => {
+  it('appends provided rel to protected one', () => {
     const externalLink = setUp('href', undefined, 'me');
 
     expect(externalLink).toHaveAttribute('target', '_blank');
-    expect(externalLink).toHaveAttribute('rel', 'me noopener noreferrer');
+    expect(externalLink).toHaveAttribute('rel', 'noopener noreferrer me');
   });
 });
