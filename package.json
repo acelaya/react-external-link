@@ -33,7 +33,7 @@
   },
   "devDependencies": {
     "@rollup/plugin-typescript": "^11.0.0",
-    "@shlinkio/eslint-config-js-coding-standard": "~2.0.2",
+    "@shlinkio/eslint-config-js-coding-standard": "~2.1.0",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
     "@types/jest": "^29.4.0",

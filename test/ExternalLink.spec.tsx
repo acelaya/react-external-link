@@ -1,6 +1,6 @@
-import React, { ReactNode } from 'react';
-import { render } from '@testing-library/react';
 import '@testing-library/jest-dom/extend-expect';
+import { render } from '@testing-library/react';
+import type { ReactNode } from 'react';
 import { ExternalLink } from '../src';
 
 describe('<ExternalLink />', () => {

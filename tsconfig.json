@@ -11,7 +11,7 @@
     "moduleResolution": "node",
     "noImplicitAny": true,
     "target": "es5",
-    "jsx": "react",
+    "jsx": "react-jsx",
     "lib": ["dom", "esnext"],
     "esModuleInterop": true,
     "module": "esnext",
