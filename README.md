@@ -18,7 +18,6 @@ This library provides a simple `ExternalLink` component for [react](https://es.r
 If you just need a simple link with no custom text:
 
 ```tsx
-import React from 'react';
 import { ExternalLink } from 'react-external-link';
 
 const MyComponent = () => (
@@ -39,7 +38,6 @@ This will be rendered as:
 If you need to provide a custom content, you can do so by providing the `ExternalLink`'s `children`:
 
 ```tsx
-import React from 'react';
 import { ExternalLink } from 'react-external-link';
 
 const MyComponent = () => (
@@ -64,7 +62,6 @@ This will be rendered as:
 It is also possible to pass any extra props, and they will be propagated to the link:
 
 ```tsx
-import React from 'react';
 import { ExternalLink } from 'react-external-link';
 
 const MyComponent = () => <ExternalLink href="https://example.com" className="my-class" />;
