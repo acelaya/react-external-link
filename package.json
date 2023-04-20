@@ -1,6 +1,6 @@
 {
   "name": "react-external-link",
-  "version": "2.2.0",
+  "version": "2.1.0",
   "license": "MIT",
   "type": "module",
   "main": "./dist/index.umd.cjs",
