@@ -4,6 +4,24 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/), and this project adheres to [Semantic Versioning](https://semver.org).
 
+## [2.2.0] - 2023-04-20
+### Added
+* *Nothing*
+
+### Changed
+* [#44](https://github.com/acelaya/react-external-link/issues/44) Migrate to vite for bundling.
+* [#45](https://github.com/acelaya/react-external-link/issues/45) Migrate to vitest for testing.
+
+### Deprecated
+* *Nothing*
+
+### Removed
+* *Nothing*
+
+### Fixed
+* *Nothing*
+
+
 ## [2.1.0] - 2023-02-19
 ### Added
 * *Nothing*
