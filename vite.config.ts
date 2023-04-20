@@ -28,7 +28,7 @@ export default defineConfig({
     globals: true,
     setupFiles: './test/setup.js',
     coverage: {
-      provider: 'c8',
+      provider: 'istanbul',
       reportsDirectory: './coverage',
       include: [
         'src/**/*.tsx',
