@@ -1,8 +1,7 @@
-import type { AnchorHTMLAttributes, FC, ReactNode } from 'react';
+import type { AnchorHTMLAttributes, FC } from 'react';
 
-export interface ExternalLinkProps extends AnchorHTMLAttributes<Element> {
+export interface ExternalLinkProps extends Omit<AnchorHTMLAttributes<Element>, 'href'> {
   href: string;
-  children?: ReactNode;
 }
 
 export const ExternalLink: FC<ExternalLinkProps> = ({ href, children, rel, ...rest }: ExternalLinkProps) => (

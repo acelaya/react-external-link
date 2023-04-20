@@ -9,14 +9,15 @@
     "noUnusedParameters": true,
     "strictNullChecks": true,
     "moduleResolution": "node",
+    "resolveJsonModule": true,
     "noImplicitAny": true,
     "target": "es5",
     "jsx": "react-jsx",
     "lib": ["dom", "esnext"],
     "esModuleInterop": true,
     "module": "esnext",
-
+    "types": []
   },
-  "include": ["src/**/*", "test/**/*"],
+  "include": ["src/**/*", "test/**/*", "vite.config.ts"],
   "exclude": ["node_modules"]
 }
