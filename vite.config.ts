@@ -6,7 +6,7 @@ import pack from './package.json';
 
 // eslint-disable-next-line no-restricted-exports
 export default defineConfig({
-  plugins: [react(), dts()],
+  plugins: [react(), dts({ rollupTypes: true })],
   build: {
     lib: {
       entry: resolve(__dirname, 'src/index.ts'),
