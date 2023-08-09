@@ -1,3 +1,3 @@
 #!/usr/bin/env bash
 
-docker-compose run react_external_link /bin/sh -c "cd /react-external-link && $*"
+docker compose run react_external_link /bin/sh -c "cd /react-external-link && $*"
