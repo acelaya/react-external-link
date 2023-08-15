@@ -9,7 +9,8 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 * *Nothing*
 
 ### Changed
-* Update dependencies
+* Update dependencies.
+* Migrate to shlink reusable workflows.
 
 ### Deprecated
 * *Nothing*
