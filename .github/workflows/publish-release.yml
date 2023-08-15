@@ -6,33 +6,6 @@ on:
       - 'v*'
 
 jobs:
-  npm-package:
-    runs-on: ubuntu-latest
-    strategy:
-      matrix:
-        node-version: ['18.x']
-    steps:
-      - name: Checkout code
-        uses: actions/checkout@v3
-      - uses: actions/setup-node@v3
-        with:
-          node-version: ${{ matrix.node-version }}
-          registry-url: 'https://registry.npmjs.org'
-      - run: npm ci
-      - run: npm version ${GITHUB_REF#refs/tags/v} --git-tag-version=false
-      - run: npm run build
-      - run: npm publish --access public
-        env:
-          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
-
-  github-release:
-    needs: ['npm-package']
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout code
-        uses: actions/checkout@v3
-      - name: Publish release
-        uses: docker://antonyurchenko/git-release:latest
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          ALLOW_EMPTY_CHANGELOG: "true"
+  ci:
+    uses: shlinkio/github-actions/.github/workflows/js-lib-publish.yml@main
+    secrets: inherit

@@ -34,7 +34,8 @@
     "test": "vitest run",
     "test:ci": "npm run test -- --coverage",
     "lint": "eslint --ext ts,tsx ./src ./test vite.config.ts",
-    "lint:fix": "npm run lint -- --fix"
+    "lint:fix": "npm run lint -- --fix",
+    "types": "tsc"
   },
   "devDependencies": {
     "@shlinkio/eslint-config-js-coding-standard": "~2.2.0",
