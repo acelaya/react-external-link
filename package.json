@@ -34,11 +34,12 @@
     "test": "vitest run",
     "test:ci": "npm run test -- --coverage",
     "lint": "eslint --ext ts,tsx ./src ./test vite.config.ts",
-    "lint:fix": "npm run lint -- --fix"
+    "lint:fix": "npm run lint -- --fix",
+    "types": "tsc"
   },
   "devDependencies": {
     "@shlinkio/eslint-config-js-coding-standard": "~2.2.0",
-    "@testing-library/jest-dom": "^5.17.0",
+    "@testing-library/jest-dom": "^6.0.0",
     "@testing-library/react": "^14.0.0",
     "@types/react": "^18.2.19",
     "@types/react-dom": "^18.2.7",

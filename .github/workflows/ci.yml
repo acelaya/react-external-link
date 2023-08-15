@@ -7,37 +7,6 @@ on:
       - main
 
 jobs:
-  static-checks:
-    runs-on: ubuntu-22.04
-    strategy:
-      matrix:
-        node-version: ['20.x']
-        task: ['lint', 'build']
-    steps:
-      - name: Checkout code
-        uses: actions/checkout@v3
-      - name: Use node.js
-        uses: actions/setup-node@v3
-        with:
-          node-version: ${{ matrix.node-version }}
-      - run: npm ci
-      - run: npm run ${{ matrix.task }}
-
-  unit-tests:
-    runs-on: ubuntu-latest
-    strategy:
-      matrix:
-        node-version: ['16.x', '17.x', '18.x', '19.x', '20.x']
-    steps:
-      - name: Checkout code
-        uses: actions/checkout@v3
-      - name: Use node.js
-        uses: actions/setup-node@v3
-        with:
-          node-version: ${{ matrix.node-version }}
-      - run: npm ci
-      - run: npm run test:ci
-      - name: Publish coverage
-        uses: codecov/codecov-action@v3
-        with:
-          files: ./coverage/clover.xml
+  ci:
+    uses: shlinkio/github-actions/.github/workflows/js-lib-ci.yml@main
+    secrets: inherit
