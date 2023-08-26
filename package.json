@@ -38,7 +38,7 @@
     "types": "tsc"
   },
   "devDependencies": {
-    "@shlinkio/eslint-config-js-coding-standard": "~2.2.0",
+    "@shlinkio/eslint-config-js-coding-standard": "~2.3.0",
     "@testing-library/jest-dom": "^6.1.2",
     "@testing-library/react": "^14.0.0",
     "@types/react": "^18.2.20",
