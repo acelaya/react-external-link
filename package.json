@@ -1,6 +1,5 @@
 {
   "name": "react-external-link",
-  "version": "2.1.0",
   "license": "MIT",
   "type": "module",
   "main": "./dist/index.umd.cjs",
@@ -38,17 +37,17 @@
     "types": "tsc"
   },
   "devDependencies": {
-    "@shlinkio/eslint-config-js-coding-standard": "~2.3.0",
+    "@shlinkio/eslint-config-js-coding-standard": "~2.4.1",
     "@testing-library/jest-dom": "^6.4.2",
     "@testing-library/react": "^14.2.2",
     "@types/react": "^18.2.74",
     "@types/react-dom": "^18.2.24",
+    "@typescript-eslint/eslint-plugin": "^7.5.0",
+    "@typescript-eslint/parser": "^7.5.0",
     "@vitejs/plugin-react": "^4.2.1",
     "@vitest/coverage-v8": "^1.4.0",
     "eslint": "^8.57.0",
     "jsdom": "^24.0.0",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
     "typescript": "^5.4.4",
     "vite": "^5.2.8",
     "vite-plugin-dts": "^3.8.1",

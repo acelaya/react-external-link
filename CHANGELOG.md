@@ -4,19 +4,20 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/), and this project adheres to [Semantic Versioning](https://semver.org).
 
-## [Unreleased]
+## [2.3.0] - 2024-04-08
 ### Added
 * *Nothing*
 
 ### Changed
 * Update dependencies.
+* Update coding standard.
 * Migrate to shlink reusable workflows.
 
 ### Deprecated
 * *Nothing*
 
 ### Removed
-* *Nothing*
+* Remove `version` field from package.json
 
 ### Fixed
 * *Nothing*
