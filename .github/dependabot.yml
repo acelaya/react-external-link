@@ -8,3 +8,24 @@ updates:
       time: '09:00'
       timezone: 'Europe/Madrid'
     open-pull-requests-limit: 10
+    groups:
+      eslint:
+        patterns:
+          - '@shlinkio/eslint-config-js-coding-standard'
+          - '@typescript-eslint/*'
+          - 'eslint'
+      types:
+        patterns:
+          - '@types/*'
+      testing:
+        patterns:
+          - '@testing-library/*'
+      vite:
+        patterns:
+          - 'vite'
+          - 'vite-plugin-dts'
+          - '@vitejs/*'
+      vitest:
+        patterns:
+          - 'vitest'
+          - '@vitest/*'
