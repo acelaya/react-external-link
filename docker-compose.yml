@@ -1,8 +1,6 @@
-version: '3'
-
 services:
     react_external_link:
         container_name: react_external_link
-        image: node:20.3-alpine
+        image: node:22.2-alpine
         volumes:
             - ./:/react-external-link
