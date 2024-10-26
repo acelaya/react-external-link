@@ -1,6 +1,7 @@
 services:
     react_external_link:
         container_name: react_external_link
-        image: node:22.2-alpine
+        user: 1000:1000
+        image: node:22.10-alpine
         volumes:
             - ./:/react-external-link

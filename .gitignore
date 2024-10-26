@@ -1,7 +1,5 @@
 node_modules
 dist
 .rpt2_cache
-docker-compose.override.yml
-home
 .idea
 coverage
