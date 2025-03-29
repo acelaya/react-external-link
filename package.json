@@ -2,15 +2,8 @@
   "name": "react-external-link",
   "license": "MIT",
   "type": "module",
-  "main": "./dist/index.umd.cjs",
-  "module": "./dist/index.js",
+  "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
-  "exports": {
-    ".": {
-      "import": "./dist/index.js",
-      "require": "./dist/index.umd.cjs"
-    }
-  },
   "repository": {
     "url": "https://github.com/acelaya/react-external-link",
     "type": "git"
