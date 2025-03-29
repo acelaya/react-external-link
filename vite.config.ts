@@ -9,10 +9,10 @@ export default defineConfig({
   plugins: [react(), dts({ rollupTypes: true })],
   build: {
     lib: {
-      entry: resolve(__dirname, 'src/index.ts'),
-
-      name: 'ExternalLink',
-      fileName: 'index',
+      entry: {
+        index: resolve(__dirname, 'src/index.ts'),
+      },
+      formats: ['es'], // Generate ES module only
     },
     rollupOptions: {
       external: [...Object.keys(pack.peerDependencies || {}), 'react/jsx-runtime'],
@@ -34,7 +34,7 @@ export default defineConfig({
         'src/**/*.tsx',
         '!src/index.ts',
       ],
-      reporter: ['text', 'text-summary', 'clover'],
+      reporter: ['text', 'text-summary', 'clover', 'html'],
     },
   },
 });
