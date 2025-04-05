@@ -15,9 +15,12 @@ updates:
           - 'typescript-eslint'
           - '*eslint-plugin*'
           - 'eslint'
-      types:
+      react:
         patterns:
-          - '@types/*'
+          - 'react'
+          - 'react-dom'
+          - '@types/react'
+          - '@types/react-dom'
       testing:
         patterns:
           - '@testing-library/*'
