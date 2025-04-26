@@ -1,4 +1,5 @@
 import { render } from '@testing-library/react';
+import axe from 'axe-core';
 import type { ReactNode } from 'react';
 import { ExternalLink } from '../src';
 
@@ -43,5 +44,12 @@ describe('<ExternalLink />', () => {
 
     expect(externalLink).toHaveAttribute('target', '_blank');
     expect(externalLink).toHaveAttribute('rel', 'noopener noreferrer me');
+  });
+
+  it('passes a11y checks', async () => {
+    const externalLink = setUp();
+    const { violations } = await axe.run(externalLink);
+
+    expect(violations).toStrictEqual([]);
   });
 });

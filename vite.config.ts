@@ -24,9 +24,17 @@ export default defineConfig({
     },
   },
   test: {
-    environment: 'jsdom',
     globals: true,
     setupFiles: './test/setup.ts',
+
+    browser: {
+      provider: 'playwright',
+      enabled: true,
+      headless: true,
+      screenshotFailures: false,
+      instances: [{ browser: 'chromium' }],
+    },
+
     coverage: {
       provider: 'v8',
       reportsDirectory: './coverage',
