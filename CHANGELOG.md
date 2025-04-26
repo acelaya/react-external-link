@@ -10,6 +10,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 
 ### Changed
 * Tests are now run in an actual browser via vitest browser mode and playwright.
+* Add accessibility tests via axe-core.
 
 ### Deprecated
 * *Nothing*
