@@ -1,6 +1,6 @@
-FROM mcr.microsoft.com/playwright:v1.52.0-noble
+FROM mcr.microsoft.com/playwright:v1.54.2-noble
 
-ENV NODE_VERSION 22.14
+ENV NODE_VERSION 22.18
 
 # Install Node.js
 RUN curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.2/install.sh | bash && \

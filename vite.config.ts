@@ -1,3 +1,4 @@
+// @ts-expect-error These fail with "moduleResolution: node". It should use "moduleResolution: nodenext"
 import react from '@vitejs/plugin-react';
 import { resolve } from 'path';
 import dts from 'vite-plugin-dts';
