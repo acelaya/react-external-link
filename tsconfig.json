@@ -6,17 +6,17 @@
     "sourceMap": true,
     "noUnusedParameters": true,
     "strictNullChecks": true,
-    "moduleResolution": "node",
+    "moduleResolution": "bundler",
+    "module": "ESNext",
+    "target": "ESNext",
     "resolveJsonModule": true,
     "noImplicitAny": true,
-    "target": "es5",
     "jsx": "react-jsx",
-    "lib": ["dom", "esnext"],
+    "lib": ["dom", "dom.iterable", "esnext"],
     "esModuleInterop": true,
-    "module": "esnext",
-    "types": ["vite/client", "vitest/globals"],
-    "skipLibCheck": true
+    "skipLibCheck": true,
+    "types": ["vite/client", "vitest/globals"]
   },
-  "include": ["src/**/*", "test/**/*", "vite.config.ts"],
+  "include": ["**/*.ts", "**/*.tsx"],
   "exclude": ["node_modules"]
 }
