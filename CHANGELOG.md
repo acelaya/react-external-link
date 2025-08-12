@@ -4,9 +4,9 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/), and this project adheres to [Semantic Versioning](https://semver.org).
 
-## [Unreleased]
+## [2.6.0] - 2025-08-12
 ### Added
-* *Nothing*
+* Allow passing a `ref` to `ExternalLink`.
 
 ### Changed
 * Tests are now run in an actual browser via vitest browser mode and playwright.
@@ -16,7 +16,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 * *Nothing*
 
 ### Removed
-* *Nothing*
+* Drop support for React 18.
 
 ### Fixed
 * *Nothing*
