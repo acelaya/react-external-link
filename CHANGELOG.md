@@ -4,6 +4,23 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/), and this project adheres to [Semantic Versioning](https://semver.org).
 
+## [2.6.1] - 2025-10-10
+### Added
+* *Nothing*
+
+### Changed
+* Switch to trusted publishing.
+
+### Deprecated
+* *Nothing*
+
+### Removed
+* *Nothing*
+
+### Fixed
+* *Nothing*
+
+
 ## [2.6.0] - 2025-08-12
 ### Added
 * Allow passing a `ref` to `ExternalLink`.
