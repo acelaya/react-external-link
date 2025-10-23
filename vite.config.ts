@@ -1,4 +1,5 @@
 import react from '@vitejs/plugin-react';
+import { playwright } from '@vitest/browser-playwright';
 import { resolve } from 'path';
 import dts from 'vite-plugin-dts';
 import { defineConfig } from 'vitest/config';
@@ -28,7 +29,7 @@ export default defineConfig({
     setupFiles: './test/setup.ts',
 
     browser: {
-      provider: 'playwright',
+      provider: playwright(),
       enabled: true,
       headless: true,
       screenshotFailures: false,
