@@ -46,11 +46,11 @@
     "eslint-plugin-jsx-a11y": "^6.10.2",
     "eslint-plugin-react": "^7.37.5",
     "eslint-plugin-react-compiler": "^19.0.0-beta-714736e-20250131",
-    "eslint-plugin-react-hooks": "^7.0.0",
+    "eslint-plugin-react-hooks": "^7.0.1",
     "eslint-plugin-simple-import-sort": "^12.1.1",
     "playwright": "^1.56.1",
     "typescript": "^5.9.3",
-    "typescript-eslint": "^8.46.1",
+    "typescript-eslint": "^8.46.2",
     "vite": "^7.1.10",
     "vite-plugin-dts": "^4.5.4",
     "vitest": "^4.0.1"
