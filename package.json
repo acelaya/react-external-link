@@ -41,7 +41,7 @@
     "@vitest/browser-playwright": "^4.0.8",
     "@vitest/coverage-v8": "^4.0.8",
     "axe-core": "^4.11.0",
-    "eslint": "^9.39.0",
+    "eslint": "^9.39.1",
     "eslint-plugin-import": "^2.32.0",
     "eslint-plugin-jsx-a11y": "^6.10.2",
     "eslint-plugin-react": "^7.37.5",
@@ -50,7 +50,7 @@
     "eslint-plugin-simple-import-sort": "^12.1.1",
     "playwright": "^1.56.1",
     "typescript": "^5.9.3",
-    "typescript-eslint": "^8.46.2",
+    "typescript-eslint": "^8.46.3",
     "vite": "^7.2.2",
     "vite-plugin-dts": "^4.5.4",
     "vitest": "^4.0.1"
