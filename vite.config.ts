@@ -1,13 +1,13 @@
 import react from '@vitejs/plugin-react';
 import { playwright } from '@vitest/browser-playwright';
 import { resolve } from 'path';
-import dts from 'vite-plugin-dts';
+import dts from 'unplugin-dts/vite';
 import { defineConfig } from 'vitest/config';
 import pack from './package.json';
 
 // eslint-disable-next-line no-restricted-exports
 export default defineConfig({
-  plugins: [react(), dts({ rollupTypes: true })],
+  plugins: [react(), dts({ entryRoot: 'src' })],
   build: {
     lib: {
       entry: {
@@ -15,7 +15,7 @@ export default defineConfig({
       },
       formats: ['es'], // Generate ES module only
     },
-    rollupOptions: {
+    rolldownOptions: {
       external: [...Object.keys(pack.peerDependencies || {}), 'react/jsx-runtime'],
       output: {
         globals: {
