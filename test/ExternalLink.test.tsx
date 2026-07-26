@@ -5,7 +5,11 @@ import { ExternalLink } from '../src';
 
 describe('<ExternalLink />', () => {
   const setUp = (href = 'href', children?: ReactNode, rel?: string): ChildNode => {
-    const { container } = render(<ExternalLink href={href} rel={rel}>{children}</ExternalLink>);
+    const { container } = render(
+      <ExternalLink href={href} rel={rel}>
+        {children}
+      </ExternalLink>,
+    );
     const { firstChild } = container;
 
     if (!firstChild) {

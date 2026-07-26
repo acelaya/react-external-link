@@ -1,11 +1,10 @@
+import { resolve } from 'path';
 import react from '@vitejs/plugin-react';
 import { playwright } from '@vitest/browser-playwright';
-import { resolve } from 'path';
 import dts from 'unplugin-dts/vite';
 import { defineConfig } from 'vitest/config';
 import pack from './package.json';
 
-// eslint-disable-next-line no-restricted-exports
 export default defineConfig({
   plugins: [react(), dts({ entryRoot: 'src' })],
   build: {
@@ -39,10 +38,7 @@ export default defineConfig({
     coverage: {
       provider: 'v8',
       reportsDirectory: './coverage',
-      include: [
-        'src/**/*.tsx',
-        '!src/index.ts',
-      ],
+      include: ['src/**/*.tsx', '!src/index.ts'],
       reporter: ['text', 'text-summary', 'clover', 'html'],
     },
   },
