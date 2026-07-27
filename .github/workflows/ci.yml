@@ -11,5 +11,4 @@ jobs:
     uses: shlinkio/github-actions/.github/workflows/js-lib-ci.yml@main
     secrets: inherit
     with:
-      cs-script: true
       install-playwright: true

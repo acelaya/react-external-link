@@ -2,7 +2,7 @@ services:
     react_external_link:
         container_name: react_external_link
         user: 1000:1000
-        build:
-            context: .
+        image: mcr.microsoft.com/playwright:v1.62.0-noble
+        working_dir: /react-external-link
         volumes:
             - ./:/react-external-link

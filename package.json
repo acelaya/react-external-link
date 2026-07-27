@@ -24,17 +24,17 @@
   "scripts": {
     "build": "vite build",
     "test": "vitest run",
-    "test:ci": "npm run test -- --coverage",
-    "cs": "npm run lint && npm run format:check",
-    "cs:fix": "npm run lint:fix && npm run format",
+    "test:ci": "node --run test -- --coverage",
+    "cs": "node --run lint && node --run format:check",
+    "cs:fix": "node --run lint:fix && node --run format",
     "lint": "oxlint ./src ./test ./*.config.ts",
-    "lint:fix": "npm run lint -- --fix",
+    "lint:fix": "node --run lint -- --fix",
     "format": "oxfmt ./src ./test ./*.config.ts",
-    "format:check": "npm run format -- --check",
+    "format:check": "node --run format -- --check",
     "types": "tsc"
   },
   "devDependencies": {
-    "@shlinkio/eslint-config-js-coding-standard": "~3.9.2",
+    "@shlinkio/eslint-config-js-coding-standard": "~4.0.0",
     "@testing-library/jest-dom": "^7.0.0",
     "@testing-library/react": "^16.3.2",
     "@types/node": "^26.1.1",
