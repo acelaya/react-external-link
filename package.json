@@ -34,7 +34,7 @@
     "types": "tsc"
   },
   "devDependencies": {
-    "@shlinkio/eslint-config-js-coding-standard": "~4.0.0",
+    "@shlinkio/eslint-config-js-coding-standard": "~4.1.0",
     "@testing-library/jest-dom": "^7.0.0",
     "@testing-library/react": "^16.3.2",
     "@types/node": "^26.1.2",
@@ -46,8 +46,8 @@
     "@vitest/browser-playwright": "^4.1.2",
     "@vitest/coverage-v8": "^4.1.2",
     "axe-core": "^4.12.1",
-    "oxfmt": "^0.61.0",
-    "oxlint": "^1.76.0",
+    "oxfmt": "^0.62.0",
+    "oxlint": "^1.77.0",
     "oxlint-tsgolint": "^7.0.2001",
     "playwright": "^1.62.1",
     "typescript": "^7.0.2",
