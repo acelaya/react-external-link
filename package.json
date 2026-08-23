@@ -45,7 +45,7 @@
     "@vitest/browser": "^4.1.11",
     "@vitest/browser-playwright": "^4.1.2",
     "@vitest/coverage-v8": "^4.1.2",
-    "axe-core": "^4.12.1",
+    "axe-core": "^4.13.0",
     "oxfmt": "^0.62.0",
     "oxlint": "^1.77.0",
     "oxlint-tsgolint": "^7.0.2001",
