@@ -21,9 +21,6 @@ updates:
           - 'react-dom'
           - '@types/react'
           - '@types/react-dom'
-      testing:
-        patterns:
-          - '@testing-library/*'
       vite:
         patterns:
           - 'vite'
@@ -32,4 +29,5 @@ updates:
       vitest:
         patterns:
           - 'vitest'
+          - 'vitest-browser-react'
           - '@vitest/*'
