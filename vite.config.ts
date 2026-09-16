@@ -1,16 +1,15 @@
-import { resolve } from 'path';
 import react from '@vitejs/plugin-react';
 import { playwright } from '@vitest/browser-playwright';
 import dts from 'unplugin-dts/vite';
 import { defineConfig } from 'vitest/config';
-import pack from './package.json';
+import pack from './package.json' with { type: 'json' };
 
 export default defineConfig({
   plugins: [react(), dts({ entryRoot: 'src' })],
   build: {
     lib: {
       entry: {
-        index: resolve(__dirname, 'src/index.ts'),
+        index: './src/index.ts',
       },
       formats: ['es'], // Generate ES module only
     },
@@ -25,7 +24,7 @@ export default defineConfig({
   },
   test: {
     globals: true,
-    setupFiles: './test/setup.ts',
+    clearMocks: true,
 
     browser: {
       provider: playwright(),
