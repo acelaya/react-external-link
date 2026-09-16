@@ -5,7 +5,7 @@ import { defineConfig } from 'vitest/config';
 import pack from './package.json' with { type: 'json' };
 
 export default defineConfig({
-  plugins: [react(), dts({ entryRoot: 'src' })],
+  plugins: [react(), dts({ entryRoot: 'src', exclude: ['test', '**/*.config.ts'] })],
   build: {
     lib: {
       entry: {
