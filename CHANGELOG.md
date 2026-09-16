@@ -4,12 +4,13 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/), and this project adheres to [Semantic Versioning](https://semver.org).
 
-## [Unreleased]
+## [2.8.0] - 2026-09-16
 ### Added
 * *Nothing*
 
 ### Changed
 * Migrate from ESLint to Oxlint and Oxfmt.
+* Replace testing library with built-in vitest browser capabilities.
 
 ### Deprecated
 * *Nothing*
@@ -18,7 +19,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 * *Nothing*
 
 ### Fixed
-* *Nothing*
+* Cleanup type definitions, ignoring configs and tests.
 
 
 ## [2.7.0] - 2026-05-12
