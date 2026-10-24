@@ -50,7 +50,7 @@
     "playwright": "^1.64.0",
     "typescript": "^7.0.2",
     "unplugin-dts": "^1.1.2",
-    "vite": "^8.3.4",
+    "vite": "^8.3.5",
     "vitest": "^5.0.0",
     "vitest-browser-react": "^2.3.0"
   },
